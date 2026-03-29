@@ -14,9 +14,4 @@ Here you can see which versions of our robot you can find in the repository. We 
 | 1.0.0   | ✅                 |Simple Version|
 
 ## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+If you notice an issue with some of our codes (versions),...
