@@ -14,4 +14,3 @@ really helpful for amateurs and students to learn how to think, cooperate, and i
 skills and their knowledge on electronics, signals & systems, wireless
 communication, mechanics, and power management.</p>
 
-hello from t he
