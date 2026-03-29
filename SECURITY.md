@@ -5,11 +5,11 @@
 Use this section to tell people about which versions of your project are
 currently being supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.2.2   | ✅ |
-| 1.2.1   | ❌  (errors during testing)|
-| 1.1.0   | ✅               | 
+| Version | Supported          | Description |
+| ------- | ------------------ |-------------|
+| 1.2.2   | ✅                 |RC5 remote control|
+| 1.2.1   | ❌                 |⚠️ RC5 remote control (errors during testing)|
+| 1.1.0   | ✅                 |Simple Version| 
 
 ## Reporting a Vulnerability
 
