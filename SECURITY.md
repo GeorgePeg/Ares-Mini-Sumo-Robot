@@ -4,7 +4,7 @@
 
 Here you can see which versions of our robot you can find in the repository.
 
-| Version | Supported          | Description |
+| Version | Recommended for use| Description |
 | ------- | ------------------ |-------------|
 | 1.2.3   | ✅                 |RC5 remote control with fuzzyAttack()|
 | 1.2.2   | ✅                 |RC5 remote control (corrected)|
