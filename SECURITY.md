@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Here you can see which versions of our robot you can find in the repository.
+Here you can see which versions of our robot you can find in the repository. We sugest you should use the ones that are marked with ✅.
 
 | Version | Recommended for use| Description |
 | ------- | ------------------ |-------------|
