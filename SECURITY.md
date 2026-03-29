@@ -6,12 +6,12 @@ Here you can see which versions of our robot you can find in the repository. We 
 
 | Version | Recommended for use| Description |
 | ------- | ------------------ |-------------|
-| 1.2.4   | ✅                 |Waiting  Strategy|
-| 1.2.3   | ✅                 |RC5 remote control with fuzzyAttack()|
-| 1.2.2   | ✅                 |RC5 remote control (corrected)|
-| 1.2.1   | ❌                |⚠️ RC5 remote control (errors during testing)|
-| 1.1.0   | ✅                 |Debugging using BLE protocol|
-| 1.0.0   | ✅                 |Simple Version|
+| 1.2.4   | ✅|Waiting  Strategy|
+| 1.2.3   | ✅|RC5 remote control with fuzzyAttack()|
+| 1.2.2   | ✅|RC5 remote control (corrected)|
+| 1.2.1   | ❌|⚠️ RC5 remote control (errors during testing)|
+| 1.1.0   | ✅|Debugging using BLE protocol|
+| 1.0.0   | ✅|Simple Version|
 
 ## Reporting a Vulnerability
 If you notice an issue with some of our codes (versions),...
