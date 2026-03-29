@@ -9,7 +9,8 @@ currently being supported with security updates.
 | ------- | ------------------ |-------------|
 | 1.2.2   | ✅                 |RC5 remote control (corrected)|
 | 1.2.1   | ❌                 |⚠️ RC5 remote control (errors during testing)|
-| 1.1.0   | ✅                 |Simple Version| 
+| 1.1.0   | ✅                 |Simple Version|
+| 1.0.0   | ✅                 |Analog Input testing|
 
 ## Reporting a Vulnerability
 
