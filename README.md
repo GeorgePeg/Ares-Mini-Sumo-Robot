@@ -12,5 +12,9 @@ of the circular ring (the dohyo arena) while remaining inside itself. To achieve
 Beyond robotic competition, mini-sumo robots also serve a very important educational purpose. They can be
 really helpful for amateurs and students to learn how to think, cooperate, and improve their programming 
 skills and their knowledge on electronics, signals & systems, wireless
-communication, mechanics, and power management.</p>
+communication, mechanics, and power management.</p><br>
+<h2><strong>How it works?</strong></h2>
+<img width="1010" height="771" alt="MiniSumoBlockDiagram drawio" src="https://github.com/user-attachments/assets/9e62ea52-5da0-41d9-9e34-8c2bf438271a" />
+
+
 
