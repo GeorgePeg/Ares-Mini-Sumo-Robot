@@ -1,5 +1,5 @@
 # Ares Mini Sumo Robot
-<p>Ares, named after the ancient Greek god of war, refers to the category of Japanese robot wrestling, also known as Sumo. This category branches into several subcategories, such as Mini Sumo. In this repository, there is an improoved version of Ares, created for our participation in Robotic Arena competition, that takes place in Wroclaw, Poland.</p><br>
+<p>Ares, named after the ancient Greek god of war, refers to the category of Japanese robot wrestling, also known as Sumo. This category branches into several subcategories, such as Mini Sumo. In this repository, there is an improoved version of Ares, created for our participation in Robotic Arena competition, that takes place in Wroclaw, Poland. For more about our team, you can check the follwing GitHub account: (https://github.com/esdaLabWro).</p><br>
 <h2><strong>What is a mini sumo robot?</strong></h2>
 <p>A mini-sumo robot is a 10x10cm (or 100x100mm) sized version of a sumo robot with a maximum weight range of 0.5kg (or 500gr.).Just like in real-life sumo, the main purpose of a sumo robot is to detect, confront, and push the opponent out
 of the circular ring (the dohyo arena) while remaining inside itself. To achieve this, the robot must combine several engineering disciplines:
