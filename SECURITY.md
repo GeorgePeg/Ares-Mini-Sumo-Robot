@@ -7,6 +7,7 @@ currently being supported with security updates.
 
 | Version | Supported          | Description |
 | ------- | ------------------ |-------------|
+| 1.2.3   | ✅                 |RC5 remote control with fuzzyAttack()|
 | 1.2.2   | ✅                 |RC5 remote control (corrected)|
 | 1.2.1   | ❌                 |⚠️ RC5 remote control (errors during testing)|
 | 1.1.0   | ✅                 |Simple Version|
