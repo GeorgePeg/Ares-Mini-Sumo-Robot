@@ -15,9 +15,7 @@ skills and their knowledge on electronics, signals & systems, wireless
 communication, mechanics, and power management.</p><br>
 <h2><strong>How it works?</strong></h2>
 <img width="1010" height="771" alt="MiniSumoBlockDiagram drawio" src="https://github.com/user-attachments/assets/9e62ea52-5da0-41d9-9e34-8c2bf438271a" />
-<div style="color: red;">
-    <strong>Warning! </strong>The block diagram above refers to the very first version of our robot, before our custom PCB.
-</div>
+<strong style="color: red;">Warning! </strong>The block diagram above refers to the very first version of our robot, before our custom PCB.
 
 
 
