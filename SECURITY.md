@@ -2,8 +2,7 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Here you can see which versions of our robot you can find in the repository.
 
 | Version | Supported          | Description |
 | ------- | ------------------ |-------------|
