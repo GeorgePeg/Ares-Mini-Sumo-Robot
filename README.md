@@ -29,7 +29,7 @@
     </table>
 <br>
 <h4><strong>Special Thanks to:</strong></h4>
-Fotis Stamatakis 
+<strong>Fotis Stamatakis</strong> for designing the custom PCB. GitHub Account:<a href="https://github.com/FotisRFF">@FotisRFF
 
 
 <h2><strong>What is a mini sumo robot?</strong></h2>
