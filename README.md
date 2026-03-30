@@ -49,6 +49,9 @@ skills and their knowledge on electronics, signals & systems, wireless
 communication, mechanics, and power management.</p><br>
 <h2>PID Simulator</h2>
 <p>Here <a href="simulator">🔗</a> you can find a simple PID Simulator we made using Python. We connected the 
-.py scripts using the Flask framework.</p>
+.py scripts using the Flask framework.</p> To run the simulator you must do the following steps:
+<ol>
+        <li>1.Download the code from GitHub.</li>
+</ol>
 
 
