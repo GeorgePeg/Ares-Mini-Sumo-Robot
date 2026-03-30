@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Here you can see which versions of our robot you can find in the repository. We sugest you should use the ones that are marked with ✅.
+Here you can see which version of our robot you can find in the repository. We sugest you should use the ones that are marked with ✅. The table bellow refers to the .ino files inside the 📁Ares_version.
 
 | Version | Recommended for use| Description |
 | ------- | ------------------ |-------------|
