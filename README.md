@@ -11,7 +11,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>George Pegiazis></td>
+                <td>George Pegiazis</td>
                 <td>Project Manager</td>
                 <td><a href="https://github.com/GeorgePeg">@GeorgePeg</td>
             </tr>
