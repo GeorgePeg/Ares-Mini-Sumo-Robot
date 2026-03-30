@@ -1,9 +1,32 @@
 # Ares Mini Sumo Robot
 <p>Ares, named after the ancient Greek god of war, refers to the category of Japanese robot wrestling, also known as Sumo. This category branches into several subcategories, such as Mini Sumo. In this repository, there is an improoved version of Ares, created for our participation in Robotic Arena competition, that takes place in Wroclaw, Poland. For more about our team, you can check the follwing GitHub account: (https://github.com/esdaLabWro).</p><br>
 <h2><strong>Project Members</strong></h2>
-<table id="ARES-members">
-  <tr>George Pegiazis</tr>
-</table>
+<table class="table table-striped table-bordered" id="project-members">
+        <thead class="table-dark">
+            <tr>
+                <th><strong>Name</strong></th>
+                <th><strong>Role in project</strong></th>
+                <th><strong>GitHub Account</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
 
 
 
