@@ -12,11 +12,11 @@
         <tbody>
             <tr>
                 <td>George Pegiazis</td>
-                <td>Katerina Tertimpa</td>
-                <td>Ornela-Maria Qoshi</td>
+                <td>Project Manager</td>
+                <td>@GeorgePeg</td>
             </tr>
             <tr>
-                <td>Project Manager</td>
+                <td>Katerina Tertimpa</td>
                 <td>Algorithm Designer</td>
                 <td>Circuit Designer</td>
             </tr>
