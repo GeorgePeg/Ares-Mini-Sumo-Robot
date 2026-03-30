@@ -55,9 +55,10 @@ communication, mechanics, and power management.</p><br>
         <li>Make sure you have Python downloaded on your system. If not, search and download the latest version.</li>
         <li>Open the command window and find the file where the Python has been installed.</li>
         <li>There, you have to run some commands and install Flask using <code>pip</code>.</li> 
-        <li>Run <code>pip install pip-upgrade</code> to upgrade <code>pip</code>.</li>
+        <li>Run <code>pip install pip-upgrade</code> to upgrade <code>pip</code></li>
         <li>To install Flask run the command: <code>pip install Flask</code></li>
         <li>Install <code>numpy</code> using the command: <code>pip install numpy</code></li>
+        <li>Now that you've finished with the libraries needed, using the command window find the file you have download the              code from GitHub and there run the following command: <code>python app.py</code> and press Enter.</li>
 </ol>
-
+<p></p>
 
