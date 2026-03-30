@@ -11,14 +11,14 @@
         </thead>
         <tbody>
             <tr>
-                <td>Row 1, Cell 1</td>
-                <td>Row 1, Cell 2</td>
-                <td>Row 1, Cell 3</td>
+                <td>George Pegiazis</td>
+                <td>Katerina Tertimpa</td>
+                <td>Ornela-Maria Qoshi</td>
             </tr>
             <tr>
-                <td>Row 2, Cell 1</td>
-                <td>Row 2, Cell 2</td>
-                <td>Row 2, Cell 3</td>
+                <td>Project Manager</td>
+                <td>Algorithm Designer</td>
+                <td>Circuit Designer</td>
             </tr>
             <tr>
                 <td>Row 3, Cell 1</td>
