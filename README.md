@@ -13,17 +13,17 @@
             <tr>
                 <td>George Pegiazis</td>
                 <td>Project Manager</td>
-                <td>@GeorgePeg</td>
+                <td><a href="https://github.com/GeorgePeg" class="text-decoration-none">@GeorgePeg</td>
             </tr>
             <tr>
                 <td>Katerina Tertimpa</td>
                 <td>Algorithm Designer</td>
-                <td>Circuit Designer</td>
+                <td></td>
             </tr>
             <tr>
-                <td>Row 3, Cell 1</td>
-                <td>Row 3, Cell 2</td>
-                <td>Row 3, Cell 3</td>
+                <td>Ornela-Maria Qoshi</td>
+                <td>Circuit Management</td>
+                <td></td>
             </tr>
         </tbody>
     </table>
