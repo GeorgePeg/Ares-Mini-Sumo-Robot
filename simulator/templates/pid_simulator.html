@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ares Mini Sumo - PID Simulator Pro</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!--Bootstrap CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4838ece565.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /*Style CSS*/
+        :root {
+            --primary-bg: #f0f2f5;
+            --panel-bg: #ffffff;
+            --chart-bg: #212529; /* Dark background for the chart */
+            --teal-accent: #1abc9c;
+            --coral-accent: #ff6b6b;
+            --text-dark: #333333;
+            --text-light: #f8f9fa;
+        }
+
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--primary-bg); margin: 0; padding: 0; color: var(--text-dark); }
+        h1 { text-align: center; color: #0056b3; margin: 20px 0; font-weight: 700; }
+
+        /* Basic Container */
+        .main-container { display: flex; max-width: 1400px; margin: 0 auto; gap: 20px; padding: 20px; height: calc(100vh - 80px); }
+        
+        /* Control Panel (Left) */
+        .control-panel { flex: 0 0 380px; background: var(--panel-bg); padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 15px; overflow-y: auto; }
+        .panel-header { font-size: 1.1em; font-weight: bold; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 10px; color: #0056b3; }
+
+        /* Sliders & Inputs */
+        .form-group { display: flex; flex-direction: column; gap: 5px; }
+        .label-row { display: flex; justify-content: space-between; align-items: center; }
+        label { font-weight: 600; color: #555; font-size: 0.9em; }
+        .value-display { font-family: 'Courier New', monospace; background: #eee; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+        
+        input[type="range"] { width: 100%; cursor: pointer; accent-color: var(--teal-accent); }
+        input[type="number"] { padding: 8px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9em; }
+        
+        button#runBtn { padding: 12px; background-color: var(--teal-accent); color: white; border: none; border-radius: 8px; font-size: 1em; cursor: pointer; transition: background 0.2s, transform 0.1s; margin-top: 10px; }
+        button#runBtn:hover { background-color: #16a085; }
+        button#runBtn:active { transform: translateY(1px); }
+
+        /* Feedback Cards */
+        .feedback-section { margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px; }
+        .feedback-title { font-weight: bold; margin-bottom: 10px; font-size: 0.9em; color: #777; }
+        .card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .feedback-card { background: var(--primary-bg); padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #e0e0e0; }
+        .feedback-card .metric-value { font-size: 1.4em; font-weight: bold; color: var(--teal-accent); margin-bottom: 5px; }
+        .feedback-card .metric-label { font-size: 0.75em; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Chart Zone (Right) */
+        .chart-zone { flex: 1; background: var(--chart-bg); padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); position: relative; }
+        canvas#pidChart { width: 100% !important; height: 100% !important; }        
+    </style>
+</head>
+<body>
+
+<h1>ARES Robot PID Simulator Pro</h1>
+
+<div class="main-container">
+    <div class="control-panel">
+        <div class="panel-header">PID PARAMETERS</div>
+        
+        <div class="form-group">
+            <div class="label-row">
+                <label for="kp">Kp (Proportional):</label>
+                <span id="kp_val" class="value-display">20.00</span>
+            </div>
+            <input type="range" id="kp" min="0" max="100" step="0.01" value="20.0">
+        </div>
+
+        <div class="form-group">
+            <div class="label-row">
+                <label for="ki">Ki (Integral):</label>
+                <span id="ki_val" class="value-display">5.00</span>
+            </div>
+            <input type="range" id="ki" min="0" max="20" step="0.01" value="5.0">
+        </div>
+
+        <div class="form-group">
+            <div class="label-row">
+                <label for="kd">Kd (Derivative):</label>
+                <span id="kd_val" class="value-display">1.00</span>
+            </div>
+            <input type="range" id="kd" min="0" max="10" step="0.01" value="1.0">
+        </div>
+
+        <div class="form-group" style="margin-top:10px;">
+            <label for="setpoint">Goal Point (cm):</label>
+            <input type="number" id="setpoint" value="100" step="10">
+        </div>
+
+        <button id="runBtn">Update Simulation</button>
+
+        <div class="feedback-section">
+            <div class="feedback-title">REAL-TIME PERFORMANCE</div>
+            <div class="card-grid">
+                <div class="feedback-card">
+                    <div id="finalPos_val" class="metric-value">0 cm</div>
+                    <div class="metric-label">CURRENT POSITION</div>
+                </div>
+                <div class="feedback-card">
+                    <div id="settling_val" class="metric-value">0 s</div>
+                    <div class="metric-label">SETTLING TIME</div>
+                </div>
+                <div class="feedback-card" style="grid-column: span 2;">
+                    <div id="overshoot_val" class="metric-value">0 %</div>
+                    <div class="metric-label">PERCENT OVERSHOOT</div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin-top:auto; font-size: 0.8em; color: #888; text-align:center;">
+            Ares Mini Sumo Robot | Micro-Simulation v1.0
+        </div>
+    </div>
+
+    <div class="chart-zone">
+        <canvas id="pidChart"></canvas>
+    </div>
+</div>
+
+<script>
+    // --- JavaScript Logic (Updated for Sliders and Cards) ---
+    
+    let pidChart = null;
+
+    // Update the numeric values next to the sliders
+    function updateSliderDisplays() {
+        document.getElementById('kp_val').innerText = parseFloat(document.getElementById('kp').value).toFixed(2);
+        document.getElementById('ki_val').innerText = parseFloat(document.getElementById('ki').value).toFixed(2);
+        document.getElementById('kd_val').innerText = parseFloat(document.getElementById('kd').value).toFixed(2);
+    }
+
+    // Calculate Settling Time, Overshoot
+    function calculateMetrics(history, setpoint) {
+        const data = history.position;
+        const time = history.time;
+        
+        // Final Position
+        const finalPos = data[data.length - 1];
+        
+        // Overshoot
+        const maxPos = Math.max(...data);
+        const overshoot = setpoint > 0 ? ((maxPos - setpoint) / setpoint) * 100 : 0;
+        
+        // Settling Time (5% threshold)
+        let settlingTime = time[time.length - 1];
+        const threshold = setpoint * 0.05;
+        for (let i = data.length - 1; i >= 0; i--) {
+            if (Math.abs(data[i] - setpoint) > threshold) {
+                settlingTime = time[i];
+                break;
+            }
+        }
+
+        // Ενημέρωση των Cards στο UI
+        document.getElementById('finalPos_val').innerText = finalPos.toFixed(1) + " cm";
+        document.getElementById('overshoot_val').innerText = (overshoot > 0 ? overshoot.toFixed(1) : 0) + " %";
+        document.getElementById('settling_val').innerText = settlingTime.toFixed(1) + " s";
+    }
+
+    function updateChart(timeLabels, positionData, setpoint) {
+        const ctx = document.getElementById('pidChart').getContext('2d');
+        const setpointLine = Array(timeLabels.length).fill(setpoint);
+
+        // Configuration with new colors (Teal, Coral) & Dark Background
+        const chartConfig = {
+            type: 'line',
+            data: {
+                labels: timeLabels,
+                datasets: [
+                    {
+                        label: 'Robot Position (cm)',
+                        data: positionData,
+                        borderColor: '#1abc9c', // Teal
+                        backgroundColor: 'rgba(26, 188, 156, 0.2)', // Light Teal fill
+                        borderWidth: 3,
+                        tension: 0.15,
+                        fill: true,
+                        pointRadius: 0 // Hide points for a cleaner line
+                    },
+                    {
+                        label: 'Goal (Setpoint)',
+                        data: setpointLine,
+                        borderColor: '#ff6b6b', // Coral
+                        borderDash: [8, 4], // Dashed
+                        borderWidth: 2,
+                        pointRadius: 0,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { 
+                        title: { display: true, text: 'Time (s)', color: '#aaa' },
+                        grid: { color: 'rgba(255,255,255,0.05)' }, // Light grid lines
+                        ticks: { color: '#aaa' }
+                    },
+                    y: { 
+                        title: { display: true, text: 'Distance (cm)', color: '#aaa' },
+                        beginAtZero: true,
+                        grid: { color: 'rgba(255,255,255,0.05)' },
+                        ticks: { color: '#aaa' }
+                    }
+                },
+                plugins: {
+                    legend: { labels: { color: '#eee' } } // White letters in the legend
+                }
+            }
+        };
+
+        if (pidChart) {
+            pidChart.data = chartConfig.data;
+            pidChart.update('none'); // Update without animation for speed
+        } else {
+            pidChart = new Chart(ctx, chartConfig);
+        }
+    }
+
+    async function runSimulation() {
+        updateSliderDisplays(); // Update the numbers next to the sliders
+
+        const simData = {
+            kp: parseFloat(document.getElementById('kp').value),
+            ki: parseFloat(document.getElementById('ki').value),
+            kd: parseFloat(document.getElementById('kd').value),
+            setpoint: parseFloat(document.getElementById('setpoint').value)
+        };
+
+        try {
+            const response = await fetch('/simulate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(simData)
+            });
+
+            const result = await response.json();
+            
+            updateChart(result.time, result.position, simData.setpoint);
+            calculateMetrics(result, simData.setpoint); // Calculate and display Settling Time etc.
+
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+
+    // Event Listeners for automatic update when sliders change
+    document.querySelectorAll('input[type="range"]').forEach(input => {
+        input.addEventListener('input', runSimulation); 
+    });
+    
+    // Update when setpoint changes
+    document.getElementById('setpoint').addEventListener('change', runSimulation);
+    document.getElementById('runBtn').addEventListener('click', runSimulation);
+
+    // Initial execution
+    runSimulation();
+
+</script>
+</body>
+</html>
