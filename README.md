@@ -11,7 +11,8 @@
         </thead>
         <tbody>
             <tr>
-                <td>George Pegiazis</td>
+                <td>George Pegiazis ![G_Pegiazis](https://github.com/user-attachments/assets/03a04c02-5e0c-4d4d-a10a-d1fffc255431)
+</td>
                 <td>Project Manager</td>
                 <td><a href="https://github.com/GeorgePeg">@GeorgePeg</td>
             </tr>
