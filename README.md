@@ -13,26 +13,27 @@
             <tr>
                 <td>George Pegiazis</td>
                 <td>Project Manager</td>
-                <td><a href="https://github.com/GeorgePeg">@GeorgePeg</td>
+                <td><a href="https://github.com/GeorgePeg">@GeorgePeg</a></td>
             </tr>
             <tr>
                 <td>Katerina Tertimpa</td>
                 <td>Algorithm Designer</td>
-                <td><a href="https://github.com/katerina-kt">@katerina-kt</td>
+                <td><a href="https://github.com/katerina-kt">@katerina-kt</a></td>
             </tr>
             <tr>
                 <td>Ornela-Maria Qoshi</td>
                 <td>Circuit Management</td>
-                <td><a href="https://github.com/ornela-maria">@ornela-maria</td>
+                <td><a href="https://github.com/ornela-maria">@ornela-maria</a></td>
             </tr>
         </tbody>
     </table>
 <br>
 <h4><strong>Special Thanks to:</strong></h4>
-<strong>Fotis Stamatakis</strong> for designing the custom PCB. GitHub Account:<a href="https://github.com/FotisRFF">@FotisRFF<br>
-<strong>Basilis Toumpas</strong> for helping during the weld process. GitHub Account:<a href="https://github.com/billtgr">@billtgr
-
-
+<ul>
+<li><strong>Fotis Stamatakis</strong> for designing the custom PCB. GitHub Account:<a                         href="https://github.com/FotisRFF">@FotisRFF</a></li>
+<li><strong>Basilis Toumpas</strong> for helping during the weld process. GitHub Account:<a href="https://github.com/billtgr">@billtgr</a></li>
+</ul>
+<br>
 <h2><strong>What is a mini sumo robot?</strong></h2>
 <p>A mini-sumo robot is a 10x10cm (or 100x100mm) sized version of a sumo robot with a maximum weight range of 0.5kg (or 500gr.).Just like in real-life sumo, the main purpose of a sumo robot is to detect, confront, and push the opponent out
 of the circular ring (the dohyo arena) while remaining inside itself. To achieve this, the robot must combine several engineering disciplines:
