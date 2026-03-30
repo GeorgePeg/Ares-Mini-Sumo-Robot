@@ -11,8 +11,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>George Pegiazis <img src="![G_Pegiazis](https://github.com/user-attachments/assets/0bed882e-aacf-4d55-aa44-ab8f568ac81e)
-"></td>
+                <td>George Pegiazis></td>
                 <td>Project Manager</td>
                 <td><a href="https://github.com/GeorgePeg">@GeorgePeg</td>
             </tr>
@@ -28,7 +27,9 @@
             </tr>
         </tbody>
     </table>
-
+<br>
+<h4><strong>Special Thanks to:</strong></h4>
+Fotis Stamatakis 
 
 
 <h2><strong>What is a mini sumo robot?</strong></h2>
