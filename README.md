@@ -59,8 +59,8 @@ communication, mechanics, and power management.</p><br>
         <li>To install Flask run the command: <code>pip install Flask</code></li>
         <li>Install <code>numpy</code> using the command: <code>pip install numpy</code></li>
         <li>Now that you've finished with the libraries needed, using the command window find the file you have download the              code from GitHub and there run the following command: <code>python app.py</code> and press Enter.</li>
-        <li>After that you will see some messages. Inside those messages, you will notice the link <code>🔗                         http://127.0.0.1:5000/</code>. Open your browser and tap <strong>http://127.0.0.1:5000/</strong> and press Enter.</li>
-        <li>Finally, you are able to see and interact with the GUI.</li>
+        <li>After that you will see some messages. Inside those messages, you will notice the link 🔗                         "http://127.0.0.1:5000/". Open your browser and tap <strong>http://127.0.0.1:5000/</strong> and press Enter.</li>
+        <li>Finally, you are able to see and interact with the GUI. ⚠️ If you run just the .html file you want be able to interact with the GUI properly.</li>
 </ol>
 <p></p>
 
