@@ -223,7 +223,7 @@ void fuzzyAttack(int line_L, int line_R) {
   int fuzzyFL =  (digitalRead(PIN_OPP_FL)  == LOW) ;
   int fuzzyFR =  (digitalRead(PIN_OPP_FR)  == LOW) ;
   int fuzzyR  =  (digitalRead(PIN_OPP_R)  == LOW) ;
-  //int fuzzyFC = (digitalRead(PIN_OPP_FC) == LOW);
+  int fuzzyFC = (digitalRead(PIN_OPP_FC) == LOW);
 
   // OPPONENT DIRECTION (-100 LEFT, +100 RIGHT)
   int opponentDir = (fuzzyFR *60 + fuzzyR*100) - (fuzzyFL*60 + fuzzyL*100);
