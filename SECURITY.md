@@ -15,4 +15,8 @@ Here you can see which version of our robot you can find in the repository. We s
 | 1.0.0   | ✅|Simple Version|
 
 ## Reporting a Vulnerability
-If you notice an issue with some of our codes (versions),...
+Security and integrity is our main thing. Therefore, if you discover a vulnerability (e.g. a bug inside one of our codes that could cause hardware malfunction, battery issues, or safety hazards and etc.), please follow these steps:
+<ul>
+  <li><strong>Please don't open a public issue.</strong>Disclosing a vulnerability publicly before a fix is available, it can put other users and their hardware at risk.</li>
+  <li>Send an email to: <email>gpegiazis@gmail.com</email></li>
+</ul>
