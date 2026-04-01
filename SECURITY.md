@@ -21,4 +21,15 @@ Security and integrity is our main thing. Therefore, if you discover a vulnerabi
   <li>Send an email to: gpegiazis@gmail.com with the subject: "Security Vulnerability Report for Ares Mini Sumo repository.</li>
   <li>Please include a detailed decription of the issue, steps to reproduce it, and the potential impact on the robot.</li>
 </ul>
-## Hardware Safety
+<strong>We will acknowledge receipt of your report within 72 hours.</strong>
+We will work to resolve the issue as quickly as possible.
+Once the fix is released, we will provide appropriate credit to you in our CHANGELOG (unless you prefer to remain anonymous).We will keep you updated on the progress of the fix.
+<br>
+<h2><strong>Hardware Safety</strong></h2>
+Since this project involves physical hardware (motors, batteries, and sensors), please exercise caution:
+<ul>
+<li>Source Code: Do not upload code to your robot from untrusted sources or forks that you have not personally verified.</li>
+<li>Dependencies: Ensure that any third-party libraries used (e.g., for motor drivers or IR sensors) are kept up to date.</li>
+<li>Physical Risks: Be aware that software bugs in hardware control can lead to physical damage (e.g., stalled motors or battery overheating). Always test new code in a controlled environment.</li>
+</ul>
+
