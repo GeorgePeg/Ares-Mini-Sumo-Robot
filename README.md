@@ -62,5 +62,5 @@ communication, mechanics, and power management.</p><br>
         <li>After that you will see some messages. Inside those messages, you will notice the link 🔗                         "http://127.0.0.1:5000/". Open your browser and tap <strong>http://127.0.0.1:5000/</strong> and press Enter.</li>
         <li>Finally, you are able to see and interact with the GUI.</li>
 </ol>
-<p>⚠️ If you run just the .html file you will not be able to interact with the GUI properly.</p>
+<p>⚠️ If you run just the .html file you will not be able to interact with the GUI properly. GUI was made using the Nano Banana Pro 🍌 tool of Google Gemini AI.</p>
 
