@@ -18,5 +18,6 @@ Here you can see which version of our robot you can find in the repository. We s
 Security and integrity is our main thing. Therefore, if you discover a vulnerability (e.g. a bug inside one of our codes that could cause hardware malfunction, battery issues, or safety hazards and etc.), please follow these steps:
 <ul>
   <li><strong>Please don't open a public issue.</strong>Disclosing a vulnerability publicly before a fix is available, it can put other users and their hardware at risk.</li>
-  <li>Send an email to: <email>gpegiazis@gmail.com</email></li>
+  <li>Send an email to: gpegiazis@gmail.com with the subject: "Security Vulnerability Report for Ares Mini Sumo repository.</li>
+  <li>Please include a detailed decription of the issue, steps to reproduce it, and the potential impact on the robot.</li>
 </ul>
