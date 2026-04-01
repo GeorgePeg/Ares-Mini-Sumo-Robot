@@ -21,3 +21,4 @@ Security and integrity is our main thing. Therefore, if you discover a vulnerabi
   <li>Send an email to: gpegiazis@gmail.com with the subject: "Security Vulnerability Report for Ares Mini Sumo repository.</li>
   <li>Please include a detailed decription of the issue, steps to reproduce it, and the potential impact on the robot.</li>
 </ul>
+## Hardware Safety
