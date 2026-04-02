@@ -2,11 +2,12 @@
 	Name: Ares Mini Sumo Robot
 	Copyright: ©UoP Robotics Team (https://github.com/esdaLabWro)
 	Authors: Katerina Tertimpa, Georgios Pegiazis (https://github.com/GeorgePeg)
-	Date: 28/03/26 21:00
-  Version: 1.2.2
-  License: GNU General Public License v3.0, 29 June 2007
-  Description: Latest version of Ares for the robotic competition Robotic Arena with remote control using RC5 protocol.
-  Application for debugging: https://play.google.com/store/search?q=ble+controller+%E2%80%93+arduino+esp32&c=apps
+	Date: 02/04/26 15:48
+ 	Version: 1.3.2
+  	License: GNU General Public License v3.0, 29 June 2007
+  	Description: Latest version of Ares for the robotic competition Robotic Arena with remote control using RC5 protocol with a LED turning
+  	on & off for debugging.
+  	Application for debugging: https://play.google.com/store/search?q=ble+controller+%E2%80%93+arduino+esp32&c=apps
 */
 #define IR_USE_ESP32_RMT_TIMER true 
 #include <Arduino.h>
@@ -260,7 +261,6 @@ void AOS(){
       break;
   }
 }
-
 
 //---PID Function---
 int PID(int error) {
