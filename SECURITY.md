@@ -6,6 +6,7 @@ Here you can see which version of our robot you can find in the repository. We s
 
 | Version | Recommended for use| Description |
 | ------- | ------------------ |-------------|
+| 1.3.2   |✅|LED for debugging|
 | 1.3.0   |✅|⚠️Referee Mode (You must have the referee remote control to test it)|
 | 1.2.4   | ✅|Waiting  Strategy|
 | 1.2.3   | ✅|RC5 remote control with fuzzyAttack()|
