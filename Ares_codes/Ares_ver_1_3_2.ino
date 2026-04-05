@@ -1,6 +1,6 @@
 /*
 	Name: Ares Mini Sumo Robot
-	Copyright: ©UoP Robotics Team (https://github.com/esdaLabWro)
+	Copyright: ©UoP Robotics Team (https://github.com/UoP-Robotics)
 	Authors: Katerina Tertimpa, Georgios Pegiazis (https://github.com/GeorgePeg)
 	Date: 02/04/26 15:48
  	Version: 1.3.2
