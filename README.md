@@ -31,7 +31,7 @@
 <br>
 <h4><strong>Special Thanks to:</strong></h4>
 <ul>
-<li><strong>Fotis Stamatakis</strong> for designing the custom PCB. GitHub Account:<a                         href="https://github.com/FotisRFF">@FotisRFF</a></li>
+<li><strong>Fotis Stamatakis</strong> for designing the custom PCB. GitHub Account:<a                         href="https://github.com/Fotisstam">@Fotisstam</a></li>
 <li><strong>Basilis Toumpas</strong> for helping during the weld process and the 3D design. GitHub Account:<a href="https://github.com/billtgr">@billtgr</a></li>
 </ul>
 <br>
